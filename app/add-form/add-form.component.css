@@ -1,0 +1,11 @@
+.form-inline {
+  justify-content: center;
+}
+
+#form-control-amount {
+  width: 100px;
+}
+
+#form-control-description {
+  width: 400px;
+}

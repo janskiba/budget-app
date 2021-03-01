@@ -1,0 +1,14 @@
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

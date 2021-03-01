@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <div class="col justify-content-center text-center">
+      <div class="h5 text-center" style="color: #509b59; padding-bottom: 20px">
+        INCOME
+      </div>
+
+      <div class="item" *ngFor="let item of itemsArray">
+        <app-item *ngIf="item.amount >= 0" [receivedItem]="item"> </app-item>
+      </div>
+    </div>
+
+    <div class="col justify-content-center text-center">
+      <div class="h5 text-center" style="color: #e36363; padding-bottom: 20px">
+        SPENDING
+      </div>
+
+      <div class="item" *ngFor="let item of itemsArray">
+        <app-item *ngIf="item.amount < 0" [receivedItem]="item"> </app-item>
+      </div>
+    </div>
+  </div>
+  <div style="width: 30px; display: block"></div>
+</div>

@@ -1,0 +1,79 @@
+.row {
+  justify-content: flex-end;
+  background: transparent;
+}
+
+.header-col {
+  text-align: center;
+  width: 30vw;
+  padding-top: 30px;
+}
+
+.h4,
+.h6 {
+  color: #212529;
+  letter-spacing: 3px;
+  padding-bottom: 30px;
+}
+
+.total-amount-color-green {
+  color: #509b59;
+}
+
+.total-amount-color-red {
+  color: #ff7a7a;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  width: 130px;
+  padding-top: 20px;
+  align-items: center;
+  right: 10vw;
+}
+
+/* jasny/ciemny tryb */
+.dark-mode .icon {
+  fill: white;
+  transition: transform 0.2s ease-out;
+}
+
+.dark-mode .overlay {
+  opacity: 0;
+  transition: 0.5s ease;
+  color: white;
+}
+
+.light-mode .icon {
+  fill: #3c3e3f;
+  transition: transform 0.2s ease-out;
+}
+
+.light-mode .overlay {
+  opacity: 0;
+  transition: 0.5s ease;
+  color: #3c3e3f;
+}
+/* ----------------------------- */
+
+.icon-container:hover {
+  cursor: pointer;
+}
+
+.icon-container:hover .icon {
+  transform: scale(1.1);
+}
+
+.icon-container:hover .overlay {
+  opacity: 1;
+}
+
+.col-12 {
+  padding-top: 10px;
+}
+
+.col-12 .h4,
+.col-12 .h6 {
+  padding-bottom: 0;
+}

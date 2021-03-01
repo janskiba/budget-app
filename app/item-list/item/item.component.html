@@ -1,0 +1,45 @@
+<div class="row">
+  <div class="amount">
+    <p
+      [ngClass]="{
+        expense: receivedItem.amount < 0,
+        income: receivedItem.amount > 0
+      }"
+    >
+      {{ receivedItem.amount }}
+    </p>
+  </div>
+  <div class="description">
+    <p>{{ receivedItem.description }}</p>
+  </div>
+  <div class="icons-container">
+    <div class="icon-container">
+      <svg
+        class="edit icon"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        (click)="onEditIconClicked()"
+      >
+        <path
+          d="M8.424 12.282l4.402 4.399-5.826 1.319 1.424-5.718zm15.576-6.748l-9.689 9.804-4.536-4.536 9.689-9.802 4.536 4.534zm-6 8.916v6.55h-16v-12h6.743l1.978-2h-10.721v16h20v-10.573l-2 2.023z"
+        />
+      </svg>
+    </div>
+    <div class="icon-container">
+      <svg
+        class="trash icon"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        (click)="onTrashIconClick()"
+      >
+        <path
+          d="M3 6v18h18v-18h-18zm5 14c0 .552-.448 1-1 1s-1-.448-1-1v-10c0-.552.448-1 1-1s1 .448 1 1v10zm5 0c0 .552-.448 1-1 1s-1-.448-1-1v-10c0-.552.448-1 1-1s1 .448 1 1v10zm5 0c0 .552-.448 1-1 1s-1-.448-1-1v-10c0-.552.448-1 1-1s1 .448 1 1v10zm4-18v2h-20v-2h5.711c.9 0 1.631-1.099 1.631-2h5.315c0 .901.73 2 1.631 2h5.712z"
+        />
+      </svg>
+    </div>
+  </div>
+</div>

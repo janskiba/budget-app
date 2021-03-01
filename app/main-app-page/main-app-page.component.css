@@ -1,0 +1,22 @@
+.darkMode {
+  background-color: #181a1b;
+  min-height: 100vh;
+}
+
+.lightMode {
+  background-color: #ffffff;
+  min-height: 100vh;
+}
+
+#background {
+  position: relative;
+  height: 50%;
+  justify-content: center;
+  background: #d9c3c3;
+  z-index: 1;
+}
+
+.svg-container {
+  position: relative;
+  z-index: 1;
+}

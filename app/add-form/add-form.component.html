@@ -1,0 +1,34 @@
+<div class="container">
+  <!-- #itemForm to template variable -->
+
+  <form class="form-inline" #form="ngForm" (ngSubmit)="onSubmit(form)">
+    <input
+      type="number"
+      id="form-control-amount"
+      class="form-control mb-2 mr-sm-2"
+      placeholder="Amount"
+      [ngModel]="item.amount"
+      name="amount"
+      required
+    />
+    <input
+      type="text"
+      id="form-control-description"
+      class="form-control mb-2 mr-sm-2"
+      placeholder="Description"
+      [ngModel]="item.description"
+      name="description"
+      required
+    />
+
+    <button
+      type="submit"
+      class="btn btn-primary mb-2"
+      style="background-color: #438b8b; border: none"
+      [disabled]="!form.valid"
+    >
+      <p *ngIf="!editItemActive" style="margin: 0">Add</p>
+      <p *ngIf="editItemActive" style="margin: 0">Save</p>
+    </button>
+  </form>
+</div>

@@ -1,0 +1,85 @@
+.row {
+  position: relative;
+  background: rgb(255, 255, 255);
+  margin: auto;
+  border: 1px solid #ced4da;
+  border-radius: 15px;
+  width: 300px;
+  height: 35px;
+  overflow: hidden;
+  /* animacja powiekszania itemu na hover */
+  transition: transform 0.2s ease-out;
+}
+
+.amount {
+  display: flex;
+  width: 25%;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #ced4da;
+  transition: transform 0.2s ease-out;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-left: 10px;
+  transition: transform 0.2s ease-out;
+}
+
+p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.expense {
+  color: #ff7a7a;
+  font-weight: 500;
+}
+
+.income {
+  color: #3fdb50;
+  font-weight: 500;
+}
+
+.icons-container {
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  right: 15px;
+  padding-top: 5px;
+  transition: 0.2s ease;
+}
+
+.icon-container {
+  margin-left: 7px;
+}
+
+.icon {
+  fill: #404547;
+  height: 20px;
+  width: auto;
+  transition: transform 0.2s ease-out;
+}
+
+.row:hover {
+  transform: scale(1.1);
+}
+
+.row:hover .amount {
+  transform: scale(1.05);
+}
+
+.row:hover .description {
+  transform: scale(1.05);
+}
+
+.icon:hover {
+  transform: scale(1.3);
+}
+
+.row:hover .icons-container {
+  opacity: 1;
+}
