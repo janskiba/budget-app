@@ -9,11 +9,11 @@ Budget monitoring application built with Angular and Firebase.
 # Features:
 
 - authentication with google
-- possibility to add, delete, and edit items
+- add, delete, and edit items
 - saving items for each user in the firestore
 - budget calculator
 - dark mode
-- to try the application without logging in
+- demo version to try the application without logging in
 
 # Screenshots
 
